@@ -118,7 +118,7 @@ const Location = () => {
                     e.preventDefault();
                     showThingsModal();
                   }}
-                  className="l_link"
+                  className="l_link pahara"
                 >
                   View Full List
                 </a>
@@ -147,7 +147,7 @@ const Location = () => {
                     e.preventDefault();
                     showFaqModal();
                   }}
-                  className="l_link"
+                  className="l_link pahara"
                 >
                   View FAQ
                 </a>
