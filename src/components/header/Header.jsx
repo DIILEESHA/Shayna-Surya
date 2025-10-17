@@ -2,15 +2,19 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="header">
-
-
-
-
-
       <div className="color_codes">
-        <div className="color"></div>
-        <div className="color"></div>
-        <div className="color"></div>
+        <div className="dot">
+          <div className="color ttt"></div>
+          #56806F
+        </div>
+        <div className="dot ">
+          <div className="color tt"></div>
+          #4F8A5F
+        </div>
+        <div className="dot">
+          <div className="color t"></div>
+          #6CA66C
+        </div>
       </div>
 
       <h2 className="header_date">May 2026</h2>
