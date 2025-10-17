@@ -5,9 +5,11 @@
 }
 
 :root {
-  --blue: #004aad;
+  --blue: #6CA66C;
 }
-
+.pahara{
+  color: var(--blue);
+}
 @font-face {
   font-family: "sunday";
   src: url("../public/fonts/sunday.ttf") format("opentype");
