@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #004aad;
+}
+
+@font-face {
+  font-family: "sunday";
+  src: url("../public/fonts/sunday.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "crimson";
+  src: url("../public/fonts/crimson.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "life";
+  src: url("../public/fonts/life.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "air";
+  src: url("../public/fonts/airport.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,132 @@
+.tips-container {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 2rem;
+  /* border-radius: 10px; */
+  margin: 0 auto;
+}
+.hh {
+  text-align: right;
+  width: 100%;
+}
+
+.tips-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tips-header h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tips-icon {
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tip-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.tip-card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-left: auto;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.tip-card-content {
+  padding: 1.5rem;
+}
+
+.recommendation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommendation-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1.6;
+}
+
+.location-section {
+  margin-bottom: 1.5rem;
+}
+
+.location-section h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+
+.location-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.fo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .cc {
+  display: block;
+  
+  }
+
+  .tips-container{
+    padding:3rem 1rem;
+  }
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}

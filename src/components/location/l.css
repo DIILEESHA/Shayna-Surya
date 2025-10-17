@@ -1,0 +1,222 @@
+.location_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--blue);
+  padding: 80px 60px;
+}
+.l_title {
+  font-weight: 400;
+  font-size: 50px;
+  width: 70%;
+  line-height: 150%;
+  font-family: "sunday";
+}
+.p_img {
+  width: 200px;
+}
+
+.l_line {
+  background-color: var(--blue);
+  width: 100%;
+  height: 1px;
+  margin: 40px 0;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  font-family: "life";
+  font-weight: 400;
+}
+
+.ll_title {
+  line-height: 150%;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.ll_p {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "air";
+  font-weight: 300;
+}
+/* Existing styles remain the same until media queries */
+/* ===== Modal Styling ===== */
+.modal_header {
+  text-align: center;
+}
+.modal_title {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+  color: #111;
+  font-weight: 600;
+}
+.modal_subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.kadiya {
+  margin-top: 30px;
+}
+.l_link {
+  /* border: 1px solid #333; */
+  /* padding: 15px 30px; */
+}
+.modal_close_btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.modal_close_btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== Things To Do Modal ===== */
+.things_list {
+  line-height: 1.8;
+}
+.things_item {
+  margin-bottom: 20px;
+}
+.things_item_title {
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.things_item_p {
+  color: #555;
+}
+.things_item_link {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+/* ===== FAQ Modal ===== */
+.faq_list {
+  line-height: 1.8;
+}
+.faq_item {
+  margin-bottom: 18px;
+}
+.faq_q {
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.faq_a {
+  color: #555;
+}
+
+/* Large Laptop (1280px and below) */
+@media (max-width: 1280px) {
+  .location_grid {
+    padding: 70px 50px;
+  }
+
+  .l_title {
+    font-size: 45px;
+    width: 80%;
+  }
+}
+
+/* Laptop (1024px and below) */
+@media (max-width: 1024px) {
+  .location_grid {
+    padding: 60px 40px;
+  }
+
+  .l_title {
+    font-size: 40px;
+    width: 85%;
+  }
+
+  .p_img {
+    width: 180px;
+  }
+
+  .card_grid {
+    gap: 25px;
+  }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .location_grid {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+    gap: 40px;
+  }
+
+  .tip {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .l_title {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .l_line {
+    margin: 30px 0;
+  }
+
+  .card_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .p_img {
+    width: 160px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .location_grid {
+    padding: 40px 20px;
+  }
+
+  .l_title {
+    font-size: 30px;
+  }
+
+  .ll_title {
+    font-size: 16px;
+  }
+
+  .ll_p {
+    font-size: 14px;
+  }
+
+  .p_img {
+    width: 140px;
+  }
+
+  .l_line {
+    margin: 25px 0;
+  }
+}
+
+/* Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .location_grid {
+    padding: 30px 15px;
+  }
+
+  .l_title {
+    font-size: 26px;
+  }
+
+  .p_img {
+    width: 120px;
+  }
+}

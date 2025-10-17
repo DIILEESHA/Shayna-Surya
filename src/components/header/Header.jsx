@@ -1,0 +1,19 @@
+import "./header.css";
+import headerImg from "../../assets/img.jpeg";
+const Header = () => {
+  return (
+    <div className="header">
+
+      <h2 className="header_date">05 . 15 . 2026</h2>
+
+      <h1 className="coupler">Shayna & Surya</h1>
+      <img
+        src="https://i.imgur.com/wMdRmzp.jpeg"
+        className="header_img"
+        alt=""
+      />
+    </div>
+  );
+};
+
+export default Header;

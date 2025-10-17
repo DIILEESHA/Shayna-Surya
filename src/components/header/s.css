@@ -1,0 +1,77 @@
+.coloring {
+  color: var(--blue);
+  text-align: center;
+}
+
+/* Desktop / Large screens */
+.ss {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.story_sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.story_imgss {
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .ss {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .story_imgss {
+    height: 70vh; /* Reduce image height */
+    padding: 15px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .ss {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .story_imgss {
+    height: 70vh; /* Further reduce image height */
+    padding: 10px;
+    object-fit: contain;
+  }
+
+  .story_sub {
+    padding: 10px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .ss {
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+
+  .dansi {
+    margin-top: -30px;
+  }
+
+  .story_imgss {
+    height: 40vh;
+    /* padding: 5px; */
+  }
+}

@@ -1,0 +1,83 @@
+.header {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.header_img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.header_date {
+  font-family: "sunday";
+  /* z-index: 1; */
+  /* position: relative; */
+  margin-bottom: 20px;
+  color: var(--blue);
+  font-weight: 400;
+}
+.coupler {
+  font-family: "sunday";
+  font-size: 50px;
+  color: var(--blue);
+}
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .header {
+    margin: 60px 0;
+  }
+
+  .header_img {
+    width: 60%;
+  }
+}
+
+/* For tablets in portrait mode */
+@media (max-width: 768px) {
+  .header {
+    margin: -40px 0 0px 0;
+
+    min-height: 60vh; /* Slightly reduce height on tablets */
+    flex-direction: column; /* Stack items vertically if needed */
+    text-align: center; /* Center align text if there's any */
+  }
+
+  .header_img {
+    width: 70%;
+    margin-bottom: 30px; /* Add space if stacked with other elements */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .header {
+    margin: 30px 0 30px 0;
+    padding: 0 20px; /* Add some side padding */
+  }
+
+  .coupler {
+    font-size: 40px;
+  }
+
+  .header_img {
+    width: 100%; /* Make image take more width on small screens */
+    max-width: 400px; /* Prevent image from becoming too large */
+  }
+}
+
+/* For very small phones */
+@media (max-width: 360px) {
+  .header {
+    margin: 30px 0;
+  }
+
+  .header_img {
+    width: 95%;
+  }
+}
