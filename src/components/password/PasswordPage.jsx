@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Input, Button } from "antd";
 import "./password.css";
 
 const PasswordPage = ({ onSuccess }) => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(""); // Inline error state
-
   const correctPassword = "tysonscorner"; // Wedding password
+
+  // Check if password already stored in localStorage
+  useEffect(() => {
+    const storedPassword = localStorage.getItem("weddingPassword");
+    if (storedPassword === correctPassword) {
+      onSuccess();
+    }
+  }, [onSuccess]);
 
   const handleSubmit = () => {
     if (password.trim() === "") {
@@ -16,6 +23,7 @@ const PasswordPage = ({ onSuccess }) => {
 
     if (password === correctPassword) {
       setError(""); // Clear error
+      localStorage.setItem("weddingPassword", password); // Remember user
       onSuccess(); // Unlock the website
     } else {
       setError("Incorrect password! Please try again.");
