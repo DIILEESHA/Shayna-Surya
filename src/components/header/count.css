@@ -114,17 +114,6 @@
     font-size: 20px;
   }
 
-  .count_sub {
-    padding: 30px 15px;
-  }
-}
-
-/* Mobile Devices */
-@media (max-width: 480px) {
-  .counter {
-    padding: 30px 15px;
-  }
-
   .count_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,6 +131,18 @@
     border: 2px solid #e8d6bf;
     flex-direction: column;
   }
+
+   .count_sub {
+    /* padding: 25px 10px; */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .counter {
+    padding: 30px 15px;
+  }
+
   .count_digit {
     font-size: 28px;
   }

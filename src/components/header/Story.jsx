@@ -33,7 +33,7 @@ const Story = () => {
       </div>
       <div className="story_sub">
         <img
-          src="https://i.imgur.com/wMdRmzp.jpeg"
+          src="https://i.imgur.com/eVOovBm.jpeg"
           alt=""
           className="story_imgss"
         />

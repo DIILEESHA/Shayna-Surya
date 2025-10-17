@@ -21,6 +21,8 @@
 .story_imgss {
   padding: 20px;
   width: 100%;
+
+  border-radius: 50px;
   height: 100vh;
   object-fit: cover;
 }
@@ -49,29 +51,29 @@
   .story_imgss {
     height: 70vh; /* Further reduce image height */
     padding: 10px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
   }
 
   .story_sub {
     padding: 10px;
   }
-}
-
-/* Extra small devices */
-@media (max-width: 480px) {
   .ss {
     padding: 10px;
     display: flex;
     flex-direction: column-reverse;
     gap: 15px;
   }
+}
 
+/* Extra small devices */
+@media (max-width: 480px) {
   .dansi {
     margin-top: -30px;
   }
 
   .story_imgss {
-    height: 40vh;
+    height: 55vh;
     /* padding: 5px; */
   }
 }
