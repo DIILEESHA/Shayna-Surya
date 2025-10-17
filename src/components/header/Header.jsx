@@ -1,5 +1,4 @@
 import "./header.css";
-import headerImg from "../../assets/img.jpeg";
 const Header = () => {
   return (
     <div className="header">
@@ -8,7 +7,7 @@ const Header = () => {
 
       <h1 className="coupler">Shayna & Surya</h1>
       <img
-        src="https://i.imgur.com/wMdRmzp.jpeg"
+        src="https://i.imgur.com/Benzi4K.jpeg"
         className="header_img"
         alt=""
       />
