@@ -55,8 +55,6 @@ const Nav = () => {
                 Our Story
               </Link>
             </li>
-
-
           </ul>
         </div>
         <div className="nav_sec">
