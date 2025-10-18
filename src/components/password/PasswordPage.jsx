@@ -5,7 +5,7 @@ import "./password.css";
 const PasswordPage = ({ onSuccess }) => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(""); // Inline error state
-  const correctPassword = "tysonscorner"; // Wedding password
+  const correctPassword = "tysons"; // Wedding password
 
   // Check if password already stored in localStorage
   useEffect(() => {

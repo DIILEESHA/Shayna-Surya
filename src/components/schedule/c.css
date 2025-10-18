@@ -19,16 +19,47 @@
   /* margin:0 30px; */
 }
 
+
+.note{
+  position: relative;
+}
+
+
+.note::after{
+    position: absolute;
+  content: "";
+  height: 100%;
+  width: 3px;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--blue)!important;
+}
+
+
 .schedule_container {
   color: #fff;
   padding: 100px 20px;
   background-color: var(--blue);
 }
 
+.palsi {
+  background-color: #fff;
+
+  color: var(--blue)!important;
+}
+
 .schedule_title {
   text-align: center;
   margin-bottom: 50px;
-  color: #e8d6bf	;
+  color: #e8d6bf;
+}
+
+
+.pakar{
+  color: var(--blue);
 }
 
 .bh {
@@ -105,8 +136,12 @@
   font-weight: 300;
   font-size: 15px;
   margin-bottom: 10px;
-  color: #e8d6bf	;
+  color: #e8d6bf;
+}
 
+
+.pahara{
+  color: var(--blue);
 }
 
 .sm_main_tile {
@@ -176,11 +211,11 @@
     /* gap: 40px; */
   }
 
-  .circle2{
+  .circle2 {
     left: -48px;
   }
 
-  .sm_main_tile{
+  .sm_main_tile {
     width: 90%;
   }
 
@@ -196,12 +231,11 @@
   }
 }
 @media (max-width: 660px) {
-
-  .schedule_container{
+  .schedule_container {
     padding: 40px 20px;
   }
 
-    .schedule_flex {
+  .schedule_flex {
     padding: 0px 20px;
     /* gap: 40px; */
   }
@@ -218,7 +252,8 @@
     font-size: 14px;
   }
 
-    .circle2,.circle{
+  .circle2,
+  .circle {
     left: -27px;
   }
 }

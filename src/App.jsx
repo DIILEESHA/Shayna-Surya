@@ -8,6 +8,7 @@ import Location from "./components/location/Location";
 import Rsvp from "./components/rsvp/Rsvp";
 import Schedule from "./components/schedule/Schedule";
 import Nav from "./components/nav/Nav";
+import Scheduler from "./components/schedule/Scheduler";
 
 const App = () => {
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
           <Countdown />
           <Story />
           <Schedule />
+          <Scheduler />
           <Location />
           <Rsvp />
           {/* <Gift /> */}
