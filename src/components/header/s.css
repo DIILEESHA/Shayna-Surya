@@ -44,8 +44,14 @@
 /* Mobile screens */
 @media (max-width: 768px) {
   .ss {
-    padding: 20px;
+    padding:40px 10px!important;
     gap: 20px;
+  }
+
+
+
+  .bahir{
+    margin-bottom: 20px!important;
   }
 
   .story_imgss {
@@ -69,7 +75,11 @@
 /* Extra small devices */
 @media (max-width: 480px) {
   .dansi {
-    margin-top: -30px;
+    /* margin-top: -30px; */
+  }
+
+  .bahir{
+    /* margin-bottom: -40px!important; */
   }
 
   .story_imgss {

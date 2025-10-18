@@ -4,7 +4,7 @@ const Story = () => {
   return (
     <div className="ss" id="story">
       <div className="story_sub dansi">
-        <h2 className="schedule_title coloring">Our Story</h2>
+        <h2 className="schedule_title  coloring bahir">Our Story</h2>
 
         <p className="ll_p coloring">
           After nine years together, we’re finally getting married! Our story

@@ -92,7 +92,7 @@
   }
 
   .coupler {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .header_img {
@@ -108,6 +108,6 @@
   }
 
   .header_img {
-    width: 95%;
+    width: 100%;
   }
 }
